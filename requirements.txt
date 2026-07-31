@@ -1,0 +1,9 @@
+streamlit
+pandas
+numpy
+scikit-learn
+scikit-surprise
+pyvi
+gensim
+plotly
+wordcloud
