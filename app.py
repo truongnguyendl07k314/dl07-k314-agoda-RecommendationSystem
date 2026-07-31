@@ -129,18 +129,26 @@ st.markdown(f"""
 """, unsafe_allow_html=True)
 
 # --- HÀM TẢI DỮ LIỆU VÀ MÔ HÌNH ---
+# --- HÀM TẢI DỮ LIỆU VÀ MÔ HÌNH (ĐÃ FIX ABSOLUTE PATH) ---
 @st.cache_data
 def load_data():
-    if os.path.exists('data/hotel_info_cleaned.csv'):
-        return pd.read_csv('data/hotel_info_cleaned.csv')
+    # Lấy đường dẫn tuyệt đối của thư mục chứa file app.py
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    data_path = os.path.join(BASE_DIR, 'data', 'hotel_info_cleaned.csv')
+    
+    if os.path.exists(data_path):
+        return pd.read_csv(data_path)
     return pd.DataFrame()
 
 @st.cache_resource
 def load_models():
+    # Lấy đường dẫn tuyệt đối của thư mục chứa file app.py
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
     models_dict = {}
     model_files = ['gensim_dictionary.pkl', 'gensim_tfidf.pkl', 'gensim_index.pkl', 'surprise_svd.pkl', 'hotel_insights.pkl']
+    
     for f_name in model_files:
-        path = os.path.join('models', f_name)
+        path = os.path.join(BASE_DIR, 'models', f_name)
         if os.path.exists(path):
             with open(path, 'rb') as f:
                 models_dict[f_name.split('.')[0]] = pickle.load(f)
