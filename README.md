@@ -6,12 +6,12 @@ Hệ thống Đề xuất Khách sạn Thông minh & Bảng phân tích Phản h
 ## Cấu trúc thư mục
 
 ```
-DL07_k314_27_phanphucloc_phamhongminhtu_nguyennhattruong
+DL07_k314_27_phanphucloc_nguyennhattruong_ProjectAgoda
 ├── data/
 │   ├── hotel_info_cleaned.csv
-│   ├── hotel_reviews_cleaned.csv
-│   ├── hotel_reviews.txt
-│   └── hotel_info.txt
+│   ├── hotel_comments_cleaned.csv
+│   ├── hotel_comments.csv
+│   └── hotel_info.csv
 |
 ├── files/
 │   ├── emojicon.txt
@@ -35,8 +35,8 @@ DL07_k314_27_phanphucloc_phamhongminhtu_nguyennhattruong
 ├── notebook.ipynb
 ├── app.py
 ├── README.md
-├── Slides.ppt
-└── Work_sheet.xlsx
+├── Agoda_Recommender_System_Slide.pptx
+└── Ban phan cong cong viec.xlsx
 ```
 
 ---
