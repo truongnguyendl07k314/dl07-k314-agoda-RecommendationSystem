@@ -1,3 +1,9 @@
+# 🏍️ ĐỒ ÁN TỐT NGHIỆP DATA SCIENCE: Agoda Hotel Recommender System & Business Insights Portal
+
+**Môn học:** Khoa học Dữ liệu & Học máy (Data Science & Machine Learning)
+
+**Thực hiện bởi:** Phan Phúc Lộc - Nguyễn Nhật Trường
+
 # Agoda Hotel Recommender System & Business Insights Portal
 
 Hệ thống Đề xuất Khách sạn Thông minh & Bảng phân tích Phản hồi Khách hàng Đa chiều cho nền tảng Agoda tại Nha Trang. Dự án kết hợp các mô hình Machine Learning tiên tiến (Content-Based, Collaborative Filtering) và Dashboard phân tích dữ liệu kinh doanh trực quan dành cho chủ khách sạn.
